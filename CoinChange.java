@@ -3,7 +3,7 @@ class Solution {
         return solveUsingTabulation(coins , amount);
      
     }
-    
+    // using memoization
     public int solve(int [] coins , int amount , int n){
         if(amount == 0 ) return 0;
         if(n== 0 && amount != 0) return 1000000007; 
@@ -15,7 +15,7 @@ class Solution {
         }
         
     }
-    
+    // using tabulation
     public int solveUsingTabulation(int [] arr, int amount){
         int n = arr.length;
         int [][] dp = new int[n+1][amount+1];
